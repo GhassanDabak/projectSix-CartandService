@@ -1,0 +1,17 @@
+.featured-games-title {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+/* .img-slider {
+    margin:0 auto;
+    width:50%;
+} */
+
+.img-slider-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+    
