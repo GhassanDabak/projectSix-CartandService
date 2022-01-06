@@ -356,22 +356,6 @@ function Userprofile() {
               </tbody>
             </table>
           </div>
-          <div className="test-div">
-            <h2>Purchased Items</h2>
-            <div className="cart-profile-container">
-              {[
-                loggedUser.cartItems.map((item) => (
-                  <div className="cart-item-profile" key={item.id}>
-                    <img src={item.image} />
-                    <p>{item.title}</p>
-                    <p>
-                      {item.quantity} * {item.price}
-                    </p>
-                  </div>
-                )),
-              ]}
-            </div>
-          </div>
         </div>
       </div>
     </main>

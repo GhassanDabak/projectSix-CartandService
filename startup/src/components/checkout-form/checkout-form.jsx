@@ -23,7 +23,7 @@ function CheckoutForm({ setLoggedUser }) {
 
   const handleCheckout = (e) => {
     e.preventDefault();
-    // user.cartItems.length = 0;
+    user.cartItems.length = 0;
     localStorage.setItem("loggedUser", JSON.stringify(user));
     const allUsers = JSON.parse(localStorage.getItem("users"));
     const filteredAllUsers = allUsers.filter((data) => user.id !== data.id);

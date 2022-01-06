@@ -35,8 +35,8 @@
 }
 .price-and-btn a {
     text-decoration: none;
-    color: white;
-    background-color: #9E1F32;
+    color: black;
+    background-color: white;
     border: none;
     padding: 0.6em;
     border-radius: 5px;
@@ -45,17 +45,20 @@
 }
 .price-and-btn button{
     text-decoration: none;
-    color: white;
-    background-color: #9E1F32;
-    border: none;
+    color: black;
+    background-color: white;
+       border: none;
     font-size: 1.5rem;
     cursor: pointer; 
 }
 .price-and-btn a:hover{
-    background-color: #b60909;
+    background-color: #9E1F32;
+    border:1px solid white;
 }
 .price-and-btn a:hover button {
-    background-color: #b60909;
+    background-color: #9E1F32;
+    color:white;
+    
 }
 .price-and-btn span{
     font-size: 1.5rem;

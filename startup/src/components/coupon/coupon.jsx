@@ -27,7 +27,7 @@ function Coupon() {
         0
       )
     ) {
-      if (couponAmount === "a1997") {
+      if (couponAmount === "ghassan") {
         setTotalPrice(totalPrice - totalPrice * 0.1);
         Swal.fire({
           icon: "success",
