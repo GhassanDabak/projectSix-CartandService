@@ -1,9 +1,9 @@
 import React from 'react'
-import "./featured-games.css"
-import games from '../../data/games/games'
+import "./featured-books.css"
+import books from '../../data/books/books'
 import {Link} from "react-router-dom"
 
-function FeaturedGames() {
+function FeaturedBooks() {
     return (
         <div>
             <div>
@@ -11,7 +11,7 @@ function FeaturedGames() {
                 <hr />
             </div>
             <div className='games-container-home'>
-            {games.filter((game,index) => index <3).map((game) => (
+            {books.filter((game,index) => index <3).map((game) => (
                 
           <div className="game-container-home" key={game.id}>
 
@@ -23,7 +23,7 @@ function FeaturedGames() {
               <span className="game-price-home">Price: ${game.price}</span>
             </div>
             <div className='price-and-btn'>
-              <Link to={`/games/${game.title}`}><button className="view-game-btn">
+              <Link to={`/books/${game.title}`}><button className="view-game-btn">
               View Book
             </button></Link>
             </div>
@@ -34,4 +34,4 @@ function FeaturedGames() {
     )
 }
 
-export default FeaturedGames
+export default FeaturedBooks

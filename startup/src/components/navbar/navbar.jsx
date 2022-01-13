@@ -43,10 +43,10 @@ const NavBar = (props) => {
               </Link>
             </li>
             <li>
-              <Link to="/games">Books</Link>
+              <Link to="/books">Books</Link>
             </li>
             <li>
-              <Link to="/rooms">Teachers</Link>
+              <Link to="/teachers">Teachers</Link>
             </li>
             {props.loggedUser ?  <div className="sign-out">
               <li><Link to="/profile">Profile</Link></li>

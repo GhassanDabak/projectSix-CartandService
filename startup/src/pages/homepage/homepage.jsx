@@ -1,6 +1,6 @@
 import React from "react";
-import FeaturedGames from "../../components/featured-games/featured-games";
-import FeaturedRooms from "../../components/featured-rooms/featured-rooms";
+import FeaturedBooks from "../../components/featured-books/featured-books";
+import FeaturedTeachers from "../../components/featured-teachers/featured-teachers";
 import HeroImage from "../../components/hero-img/hero-img";
 import Testimonials from "../../components/testimonials/testimonials";
 import "./homepage.css";
@@ -13,32 +13,32 @@ function HomePage() {
   return (
     <div>
       <HeroImage />
-      <FeaturedGames />
-      <FeaturedRooms />
+      <FeaturedBooks />
+      <FeaturedTeachers />
       <Testimonials />
       <div className="animated">
         <h1 className="featured-games-title">Contact me, I won't bite!</h1>
       </div>
       <hr />
-      <main class="main-cont-contact">
-        <div class="container-contact">
-          <div class="header-contact">
+      <main className="main-cont-contact">
+        <div className="container-contact">
+          <div className="header-contact">
             <h2>Sign in</h2>
           </div>
           <form id="form" className="form-contact" onSubmit={(e)=>sendToLocalStorage(e)}>
-            <div class="form-control">
-              <label for="username">Name</label>
+            <div className="form-control">
+              <label htmlFor="username">Name</label>
               <input type="text" id="username" />
             </div>
-            <div class="form-control">
-              <label for="text">Email</label>
+            <div className="form-control">
+              <label htmlFor="text">Email</label>
               <input type="text" id="text" />
             </div>
-            <div class="form-control">
+            <div className="form-control">
               <label htmlFor="text">Message</label>
               <input type="text" id="text" />
             </div>
-            <button type="submit" class="log-btn">
+            <button type="submit" className="log-btn">
               Submit
             </button>
           </form>

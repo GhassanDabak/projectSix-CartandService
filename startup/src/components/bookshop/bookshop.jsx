@@ -1,9 +1,9 @@
 import React from 'react'
-import "./games-in-shop.css"
-import games from '../../data/games/games'
+import "./bookshop.css"
+import books from '../../data/books/books'
 import {Link} from "react-router-dom"
 
-function GamesShop() {
+function BookShop() {
     return (
         <div>
         <div>
@@ -11,7 +11,7 @@ function GamesShop() {
             <hr />
         </div>
         <div className='games-container-home'>
-        {games.map((game) => (
+        {books.map((game) => (
       <div className="game-container-home" key={game.id}>
         <div className="game-photo-container">
           <img className="game-photo-home" src={game.image} alt={game.title} />
@@ -20,7 +20,7 @@ function GamesShop() {
         <h4>{game.author}</h4>
         <div className='price-and-btn'>
           <span className="game-price-home">Price: ${game.price}</span>
-          <Link to={`/games/${game.title}`}><button className="view-game-btn">
+          <Link to={`/books/${game.title}`}><button className="view-game-btn">
           View Book
         </button></Link>
         </div>
@@ -31,4 +31,4 @@ function GamesShop() {
     )
 }
 
-export default GamesShop
+export default BookShop

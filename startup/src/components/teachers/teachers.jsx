@@ -1,27 +1,26 @@
 import React from 'react'
-import "./featured-rooms.css"
-import rooms from '../../data/rooms/rooms'
+import teachers from '../../data/teachers/teachers'
 import {Link} from "react-router-dom"
 
-function FeaturedRooms() {
+function Teachers() {
     return (
         <div>
              <div>
-                <h1 className='featured-games-title'>Get a Consultation</h1>
+                <h1 className='featured-games-title'>Teachers</h1>
                 <hr />
             </div>
             <div className='featured-rooms'>
-                {rooms.filter((item,index) => index < 1).map(room => (
+                {teachers.map(room => (
                      <div className="room-container-home" key={room.id}>
                      <div className="room-photo-container">
                        <img className="room-photo-home" src={room.image} alt={room.title} />
                      </div>
                      <div className='room-info-home'>
-                     <h2 className="room-title-home">{room.title}</h2>      
+                     <h2 className="room-title-home">{room.title}</h2>
                      <div className='price-and-btn'>
                          <p className='room-desc-home'>{room.description}</p>
                        <span className="room-price-home">Price: ${room.price}/hour</span>
-                       <Link to={`/rooms/${room.title}`} className='view-room-btn'><button className="view-room-btn">
+                       <Link to={`/teachers/${room.title}`} className='view-room-btn'><button className="view-room-btn">
                        More details
                      </button></Link>
                      </div>
@@ -33,4 +32,4 @@ function FeaturedRooms() {
     )
 }
 
-export default FeaturedRooms
+export default Teachers

@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
-import "./detailed-room.css"
+import "./detailed-teacher.css"
 import { useParams, useNavigate } from "react-router-dom";
 import ReservationForm from '../reservation-form/reservation-form';
 
-function DetailedRoom({rooms}) {
+function DetailedTeacher({rooms}) {
     const { title } = useParams();
     const [showForm, setShowForm] = useState(false);
     const navigate = useNavigate();
@@ -53,4 +53,4 @@ function DetailedRoom({rooms}) {
     )
 }
 
-export default DetailedRoom
+export default DetailedTeacher

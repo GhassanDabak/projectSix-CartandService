@@ -12,7 +12,7 @@ function HeroImage() {
         <h5>Your kids are safe!</h5>
         <h1>Huge collection of your kid's favorite books </h1>
         <p>Place appointments with the best teachers of all time.</p>
-        <Link to="/games">
+        <Link to="/books">
           <button>
             VIEW BOOKS{" "}
             <i aria-hidden="true" className="fas fa-angle-right"></i>

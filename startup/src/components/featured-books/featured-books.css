@@ -42,6 +42,7 @@
     border-radius: 5px;
     font-size: 1.5rem;
     cursor: pointer;
+    border:1px solid #9E1F32;
 }
 .price-and-btn button{
     text-decoration: none;

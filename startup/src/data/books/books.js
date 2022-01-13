@@ -1,4 +1,4 @@
-const games = [
+const books = [
     {
       id: 1,
       title: "The Caterpillar",
@@ -82,5 +82,5 @@ const games = [
       },
   ];
   
-  export default games;
+  export default books;
   

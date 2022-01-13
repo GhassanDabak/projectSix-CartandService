@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
-import "./detailed-game.css"
+import "./detailed-book.css"
 import { useParams, useNavigate } from "react-router-dom";
 
-function DetailedGame({games,setLoggedUser}) {
+function DetailedBook({games,setLoggedUser}) {
     const { title } = useParams();
     const navigate = useNavigate();
     const [user,setUser] = useState(JSON.parse(localStorage.getItem("loggedUser")) ? JSON.parse(localStorage.getItem("loggedUser")) : "")
@@ -57,4 +57,4 @@ function DetailedGame({games,setLoggedUser}) {
     )
 }
 
-export default DetailedGame
+export default DetailedBook

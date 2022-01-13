@@ -1,4 +1,4 @@
-const rooms = [
+const teachers = [
     {
       id: 1,
       title: "Ghassan Dabak",
@@ -25,5 +25,5 @@ const rooms = [
       }
   ];
   
-  export default rooms;
+  export default teachers;
   
